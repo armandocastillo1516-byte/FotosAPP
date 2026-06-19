@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ConsultaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registros Guardados (SQLite)"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FF9800"/>
+
+    <ImageView
+        android:id="@+id/ivFotoConsultada"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerInside"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Foto recuperada de SQLite" />
+
+    <TextView
+        android:id="@+id/tvNombreConsultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/tvCorreoConsultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/tvFechaConsultada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Reg: "
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Anterior"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#757575"/>
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Siguiente"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#757575"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver al Registro"
+        android:backgroundTint="#3F51B5"/>
+
+</LinearLayout>

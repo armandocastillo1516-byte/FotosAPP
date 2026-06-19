@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Personas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#3F51B5"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capturar Fotografía"
+        android:backgroundTint="#3F51B5"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivVistaPrevia"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="#E0E0E0"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Vista previa de la foto" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en Base de Datos"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnVerLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al Listado de Registros"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
