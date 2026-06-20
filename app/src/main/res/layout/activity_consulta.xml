@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="12dp">
 
         <Button
             android:id="@+id/btnAnterior"
@@ -82,6 +82,22 @@
             android:layout_marginStart="5dp"
             android:backgroundTint="#757575"/>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Este Registro"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#D32F2F"/>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar por Nombre"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#0288D1"/>
 
     <Button
         android:id="@+id/btnVolver"
